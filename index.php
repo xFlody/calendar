@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Moje appka</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.php" />
   <link rel="manifest" href="manifest.json" />
   <link rel="icon" href="icon.png" type="image/png">
   <meta name="theme-color" content="#ff0000" />
@@ -12,8 +12,8 @@
 <body>
   <h1>Moje PWA aplikace</h1>
   <p>Funguje offline a má ikonku!</p>
-  <p>Verze: v6</p>
-  <p>Vidíš mě?</p>
+  <p>Verze: v7 (php)</p>
+
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('service-worker.js').then(reg => {

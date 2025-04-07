@@ -1,9 +1,9 @@
-const CACHE_NAME = "v6";
+const CACHE_NAME = "v7";
 
 const FILES_TO_CACHE = [
   "./",
-  "./index.html",
-  "./style.css"
+  "./index.php",
+  "./style.php"
 ];
 
 self.addEventListener("install", e => {
