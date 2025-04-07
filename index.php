@@ -4,15 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Moje appka</title>
-  <link rel="stylesheet" href="style.php" />
   <link rel="manifest" href="manifest.json" />
   <link rel="icon" href="icon.png" type="image/png">
   <meta name="theme-color" content="#ff0000" />
+  <?php include './style.php'; ?>
 </head>
 <body>
-  <h1>Moje PWA aplikace</h1>
-  <p>Funguje offline a má ikonku!</p>
-  <p>Verze: v7 (php)</p>
+  <h1>Plánovací Kalendář</h1>
+  <p>Verze: <b>v10</b></p>
 
   <script>
     if ('serviceWorker' in navigator) {
