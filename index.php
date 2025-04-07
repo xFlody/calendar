@@ -11,7 +11,7 @@
 </head>
 <body>
   <h1>Plánovací Kalendář</h1>
-  <p>Verze: <b>v12</b></p>
+  <p>Verze: <b>v15</b></p>
 
   <script>
     if ('serviceWorker' in navigator) {
