@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Moje appka</title>
+  <title>Plánovací Kalendář</title>
   <link rel="manifest" href="manifest.json" />
   <link rel="icon" href="icon.png" type="image/png">
   <meta name="theme-color" content="#ff0000" />
@@ -11,7 +11,7 @@
 </head>
 <body>
   <h1>Plánovací Kalendář</h1>
-  <p>Verze: <b>v10</b></p>
+  <p>Verze: <b>v11</b></p>
 
   <script>
     if ('serviceWorker' in navigator) {
