@@ -6,15 +6,29 @@
   <title>Moje appka</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="manifest" href="manifest.json" />
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('service-worker.js');
-    }
-  </script>
+  <link rel="icon" href="icon.png" type="image/png">
+  <meta name="theme-color" content="#ff0000" />
 </head>
 <body>
   <h1>Moje PWA aplikace</h1>
   <p>Funguje offline a má ikonku!</p>
-  <p>Test</p>
+  <p>Test - verze: v5</p>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js').then(reg => {
+        reg.onupdatefound = () => {
+          const newWorker = reg.installing;
+          newWorker.onstatechange = () => {
+            if (newWorker.state === 'activated') {
+              if (navigator.serviceWorker.controller) {
+                window.location.reload();
+              }
+            }
+          };
+        };
+      });
+    }
+  </script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 {
-    "name": "Moje Appka",
-    "short_name": "Appka",
+    "name": "Plánovací Kalendář",
+    "short_name": "Kalendář",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#ffffff",
